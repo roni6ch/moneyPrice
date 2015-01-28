@@ -1,0 +1,237 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
+header, footer, nav, main, section, article, nav, aside {
+	display: block;
+}
+
+html, body {
+	/* get rid of default spacing on the edges */
+	margin: 0;
+	padding: 0;
+	/* get rid of that 2px window border in Internet Explorer 6 */
+	border: 0;
+	/* fill the height of the browser */
+	height: 100%;
+	/* no more scroll bar */
+	overflow-y: hidden;
+}
+body {
+	background: #F2EEE5;
+	direction: rtl;
+	position: relative;
+	font-family: "Alef Hebrew", Arial;
+}
+
+main {
+	height: 95%;
+}
+footer {
+	position: absolute;
+	bottom: 0px;
+	background: #ac8c73;
+	height: 5%;
+	width: 8683px;
+}
+main > article {
+	width: 400px;
+	position: absolute;
+	right: 104px;
+	color: #9f161e;
+}
+main > article > h1 {
+	font-size: 3.3em;
+	font-weight:800;
+	
+}
+main > article > p {
+	color: #9e8986;
+	font-size: 1.4em;
+	line-height: 30px;
+}
+
+.groceries {
+	width: 76px;
+	height: 120px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+.products {
+	font-family: "Alef Hebrew", Arial;
+	font-size: 20px;
+	color: #59332a;
+	float: left;
+	display: inline;
+	position: absolute;
+	right: 90px;
+	margin-top: 0px;
+}
+.sectionWhiteBoard {
+	position: relative;
+	width: 230px;
+	display: block;
+	height: 40px;
+}
+/*/////////////////////////////////// Sections //////////////////////////////*/
+
+#fruitsAndVedg, #milk, #CannedFood, #meat, #bread, #oil, #drinks {
+	position: absolute;
+	top: 45px;
+}
+#fruitsAndVedg {
+	width: 1240px;
+	right: 997px;
+}
+#milk {
+	width: 386px;
+	right: 2691px;
+}
+#CannedFood {
+	width: 282px;
+	right: 3531px;
+}
+#meat {
+	width: 382px;
+	right: 4267px;
+}
+#bread {
+	width: 376px;
+	right: 5103px;
+}
+#oil {
+	width: 477px;
+	right: 5933px;
+}
+#drinks {
+	width: 187px;
+	right: 6864px;
+}
+
+/*/////////////////////////////////// Signs //////////////////////////////*/
+
+#fruitsAndVedgSign, #milkSign, #CannedFoodSign, #meatSign, #breadSign, #oilSign, #drinksSign, #whiteBoard, #cashier, #checkout, #cart, #arrows {
+
+	position: absolute;
+}
+
+#fruitsAndVedgSign,#milkSign,#CannedFoodSign,#meatSign,#breadSign,#oilSign,#drinksSign{
+	width: 307px;
+}
+
+#fruitsAndVedgSign {
+	background: url("../images/shelet yarakot.png");
+	right: 646px;
+}
+#milkSign {
+	height: 118px;
+	background: url("../images/shelet musrei halav.png");
+	right: 2351px;
+}
+#CannedFoodSign {
+	height: 118px;
+	background: url("../images/shelet shimurim.png");
+	right: 3191px;
+}
+#meatSign {
+	height: 109px;
+	background: url("../images/shelet of ve dagim.png");
+	right: 3927px;
+}
+#breadSign {
+	height: 120px;
+	background: url("../images/shelet lehem dganim.png");
+	right: 4763px;
+}
+#oilSign {
+	height: 110px;
+	background: url("../images/shelet shemen sukar mamtakim.png");
+	right: 5593px;
+}
+#drinksSign {
+	height: 109px;
+	background: url("../images/shelet mashkaot.png");
+	right: 6524px;
+}
+#whiteBoard {
+	right: 7051px;
+	width: 230px;
+	height: 500px;
+	background: #ffffff;
+	overflow-y: auto;
+	opacity: 0.8;
+	margin-right: 20px;
+}
+#whiteBoard h2 {
+	margin-top: 50px;
+	color: #9e151c;
+}
+#checkout {
+	margin-top:-150px;
+	right: 7350px;
+	width: 281px;
+	height: 469px;
+	background: url("../images/shelet kupa.png");
+}
+#cashier {
+	right: 7350px;
+	bottom: 30px;
+	width: 286px;
+	height: 282px;
+	background: url("../images/cashier.png");
+}
+
+#cart {
+	right: 104px;
+	bottom: 7.5%;
+	width: 150px;
+	height: 134px;
+	background: url("../images/agala.png");
+	position: fixed;
+	z-index: 1;
+}
+
+#arrows {
+	width: 145px;
+	height: 64px;
+	background: url("../images/hezim.png");
+	bottom: 10%;
+	right: 314px;
+}
+#whiteBoard input[type=textbox] {
+	width: 23px;
+	height: 24px;
+	vertical-align: 87px;
+}
+#whiteBoard input[type=button] {
+	width: 30px;
+	height: 30px;
+	vertical-align: 85px;
+}
+/*/////////////////////////////////// INFO //////////////////////////////*/
+
+#fruitINFO, #milkINFO, #CannedFoodINFO, #meatINFO, #breadINFO, #oilINFO, #drinksINFO {
+	width: 307px;
+	height: 254px;
+	margin-top: 182px ;
+}
+#fruitINFO {
+	background-color: #565b3b;
+}
+#milkINFO {
+	background-color: #2e3d90;
+}
+#CannedFoodINFO {
+	background-color: #dec223;
+}
+#meatINFO {
+	background-color: #9f161e;
+}
+#breadINFO {
+	background-color: #565b3b;
+}
+#oilINFO {
+	background-color: #dec223;
+}
+#drinksINFO {
+	background-color: #2e3d90;
+}
