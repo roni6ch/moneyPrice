@@ -4,7 +4,9 @@
 		<meta charset="UTF-8">
 		<title>Money-Price</title>
 		<link rel="stylesheet" href="includes/style.css">
+		<script src="http://d3js.org/d3.v3.js"></script>
 		<script src="includes/jquery-1.11.1.min.js"></script>
+		<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
 		<script src="includes/scripts.js"></script>
 		
 	</head>
@@ -15,10 +17,10 @@
 			<article>
 				<h1>מחיר הסל</h1>
 				<p> האם עגלת הסופר שלנו באמת מתייקרת כל שנה או שזה סתם נדמה לנו?</p>
-				<p>כלכליסט ושנקר יצאו למסע ראשון מסוגו כדי לבדוק:איזה אחוז מה
-					<a href="#" class="links">שכר</a> 
+				<p>כלכליסט ושנקר יצאו למסע ראשון מסוגו כדי לבדוק: איזה אחוז
+					<a href="http://www.cbs.gov.il/y_labor/e4_03.pdf" class="links" target="_blank">מהשכר</a> 
 					שלנו אנחנו מוציאים על 
-					<a href="#" class="links">מזון</a>?
+					<a href="http://www.cbs.gov.il/reader/prices_db/PricesDB.html" class="links" target="_blank">מזון</a>?
 				</p>
 				<p>בחרו לעצמכם סל מוצרים שבועי ובדקו מה קרה ליוקר המחיה לאורך השנים.</p>
 			</article>
@@ -85,13 +87,33 @@
 					</section>
 				</article>
 				<section id="drinks"></section>
-			</section>	
-			<section id="whiteBoard"><h2>סל המזון שלך</h2><br></section>
+			</section>
+			<section id="receipt">
+				<section id="whiteBoard"><!--<h5> לסל המזון שקבע משרד הבריאות <a href="#">לחץ כאן</a></h5>-->
+					<h2>סל המזון שלך</h2>
+					
+				</section>
+				<a href="#" id="continue"></a>
+			</section>
 			<section id="payment">
 				<section></section>
 				<section></section>
 			</section>
 			<!--<audio src="includes/Supermarket.mp3" autoplay="true" loop="true" controls></audio>-->
+			
+			<section id= "d3Container">
+			<section id="d3">
+				
+			</section>
+			<section id="draggableCart">
+			<div id="draggable2" class="draggable">
+					<img src="images/agala.png">
+			</div>
+			</section>
+			</section>
+			
+			
+
 		</main>
 		<footer></footer>
 	</body>
