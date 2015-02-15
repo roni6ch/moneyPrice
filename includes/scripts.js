@@ -169,11 +169,12 @@ window.onload = function() {
 		$('#d3').empty();
 		$('main').css("width", "9200px");
 		$('footer').css("width", "9200px");
-		$('html,body').animate({scrollLeft : $("#d3Container").offset().left}, 3000);
+		//$('html,body').animate({scrollLeft : $("#d3Container").offset().left}, 3000);
+		
 		firstTimeContinue = true;
 
 		objectsFunc();
-		return false;
+		$('#d3Container').animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});
 	});
 };
 
