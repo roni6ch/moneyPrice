@@ -167,14 +167,13 @@ window.onload = function() {
 		$('#d3Container').show();
 		//$('#draggableCart').css({float: 'right'});
 		$('#d3').empty();
-		$('main').css("width", "9300px");
-		$('footer').css("width", "9300px");
-		$('body').animate({
-			scrollLeft : $("#d3Container").offset().left
-		}, 3000);
+		$('main').css("width", "9200px");
+		$('footer').css("width", "9200px");
+		$('html,body').animate({scrollLeft : $("#d3Container").offset().left}, 3000);
 		firstTimeContinue = true;
 
 		objectsFunc();
+		return false;
 	});
 };
 
@@ -379,7 +378,7 @@ function readyJson(sumArray) {
 		right : 20,
 		bottom : 30,
 		left : 50
-	}, width = 1024 - margin.left - margin.right, height = 400 - margin.top - margin.bottom;
+	}, width = 924 - margin.left - margin.right, height = 260 - margin.top - margin.bottom;
 
 	var parseDate = d3.time.format("%d-%b-%y").parse;
 
@@ -425,9 +424,9 @@ function readyJson(sumArray) {
 	function set_radius() {
 		svg.selectAll(".point").data(data).attr("r", function(d) {
 			if (d[0] != selected_year) {
-				return 9;
+				return 5;
 			} else {
-				return 18;
+				return 11;
 			}
 
 		});
@@ -437,8 +436,8 @@ function readyJson(sumArray) {
 	if ($('#precentage').length == 0 && firstTimeContinue == true) {
 		firstTimeContinue = false;
 		click = 0;
-		$("#d3").append("<p id='precentage'>" + (data[click][1] * 100).toPrecision(5) + "% </p>");
-		$("#d3").append("<p id='year'>" + data[click][0] + "</p>");
+		$("#d3Details").append("<p id='precentage'>" + (data[click][1] * 100).toPrecision(5) + "% </p>");
+		$("#d3Details").append("<p id='year'>" + data[click][0] + "</p>");
 		set_radius();
 	}
 	/*
@@ -526,3 +525,5 @@ $(function() {
 	});
 
 });
+
+//TODO: 1. update when continue click - revert the cart,       2. fix p on the d3

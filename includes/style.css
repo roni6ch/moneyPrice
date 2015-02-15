@@ -269,6 +269,18 @@ main > article > p {
 	width: 307px;
 	height: 328px;
 	position: relative;
+	-moz-transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+	transform: scale(1,1);
+	-webkit-transition: all 600ms ease;
+	-webkit-transition: all 600ms ease;
+	transition: all 600ms ease;
+}
+#fruitINFO:hover, #milkINFO:hover, #CannedFoodINFO:hover, #meatINFO:hover, #breadINFO:hover, #oilINFO:hover, #drinksINFO:hover {
+
+	-moz-transform: scale(-1,1);
+	-webkit-transform: scale(-1,1);
+	transform: scale(-1,1);
 }
 #fruitINFO {
 	background: url("../images/sipur yerakot.png");
@@ -346,28 +358,35 @@ main > article > p {
 	background: #F2EEE5;
 	z-index: 2;
 }
+#d3Details {
+	width: 924px;
+	height: 140px;
+	float: right;
+	position: relative;
+	margin-bottom: 23px;
+}
 #d3 {
 	float: right;
 	width: 1000px;
-	height: 400px;
+	height: 350px;
 	position: relative;
-	top: 23px;
+	clear: both;
 }
 
 #precentage {
-	position: absolute;
-	top: 0px;
 	color: #9f1620;
 	font-family: "Alef Hebrew", Arial;
 	font-size: 72px;
+	margin: 0px;
+	position: absolute;
 }
 #year {
-	position: absolute;
-	top: 15px;
-	right: 27px;
 	color: #9f1620;
 	font-family: "Alef Hebrew", Arial;
-	font-size: 100px;
+	font-size: 167px;
+	margin: 0px;
+	position: absolute;
+	left: 0px;
 }
 
 /*//////////// D3 ///////////////*/
@@ -384,13 +403,8 @@ main > article > p {
 
 .line {
 	fill: none;
-	stroke: steelblue;
-	stroke-width: 1.5px;
-}
-.line {
-	fill: none;
 	stroke: #4f241d;
-	stroke-width: 5px;
+	stroke-width: 3px;
 }
 .point {
 	fill: rgb(159,22,30);
@@ -403,6 +417,7 @@ main > article > p {
 	direction: rtl;
 	float: right;
 	bottom: 0%;
+	width: 924px;
 }
 .draggable {
 	width: 150px;
@@ -413,19 +428,3 @@ main > article > p {
 	cursor: e-resize;
 }
 
-
-/*///////////////////////// FLIP STORIES ////////////////////////*/
-#fruitINFO {
-	-moz-transform: scale(1,1);
-	-webkit-transform: scale(1,1);
-	transform: scale(1,1);
-	
-	-webkit-transition: all 600ms ease;
-	-webkit-transition: all 600ms ease;
-	transition: all 600ms ease;
-}
-#fruitINFO:hover{
-	-moz-transform: scale(-1,1);
-	-webkit-transform: scale(-1,1);
-	transform: scale(-1,1);
-}
