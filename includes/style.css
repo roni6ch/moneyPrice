@@ -232,12 +232,22 @@ main > article > p {
 }
 #cart {
 	right: 104px;
-	bottom: 7.5%;
 	width: 150px;
 	height: 134px;
 	background: url("../images/agala.png");
 	position: fixed;
 	z-index: 1;
+}
+
+@media (max-width:1025px ){
+	#cart {
+		bottom: 5%;
+	}
+}
+@media (min-width:1026px){
+	#cart {
+		bottom: 7.5%;
+	}
 }
 #arrows {
 	width: 42px;
@@ -358,17 +368,35 @@ main > article > p {
 	background: #F2EEE5;
 	z-index: 2;
 }
+#d3salaryDetails {
+	color: #9f1620;
+	font-family: "Alef Hebrew", Arial;
+	font-size: 24px;
+	position: absolute;
+	margin: 0px;
+	bottom: 20px;
+}
+#d3Salary {
+	color: #000000;
+	font-family: "Alef Hebrew", Arial;
+	font-size: 24px;
+	position: absolute;
+	margin: 0px;
+	bottom: 0px;
+	right: 13px;
+	font-weight: normal;
+}
 #d3Details {
 	width: 924px;
-	height: 140px;
+	height: 220px;
 	float: right;
 	position: relative;
-	margin-bottom: 23px;
+	font-weight: bolder;
 }
 #d3 {
 	float: right;
 	width: 1000px;
-	height: 350px;
+	height: 230px;
 	position: relative;
 	clear: both;
 }
@@ -378,15 +406,17 @@ main > article > p {
 	font-family: "Alef Hebrew", Arial;
 	font-size: 72px;
 	margin: 0px;
+	bottom: 33px;
 	position: absolute;
 }
 #year {
 	color: #9f1620;
 	font-family: "Alef Hebrew", Arial;
-	font-size: 167px;
+	font-size: 220px;
 	margin: 0px;
 	position: absolute;
 	left: 0px;
+	line-height: 161px;
 }
 
 /*//////////// D3 ///////////////*/
@@ -427,4 +457,3 @@ main > article > p {
 #draggable2 {
 	cursor: e-resize;
 }
-
