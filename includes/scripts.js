@@ -30,7 +30,6 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$('html, body, *').mousewheel(function(e, delta) {
 		this.scrollLeft += (delta * 100);
-		e.preventDefault();
 	});
 });
 ///////////////////////// ******* PARSE JSONS ******* //////////////////////////
@@ -130,7 +129,6 @@ function Img(imgSrc, id) {
 	clickOnProduct.className = 'numberOfClicks';
 	clickOnProduct.id = "productClicks" + idP;
 	circleCount.appendChild(clickOnProduct);
-	linkObj.setAttribute('href', "#");
 	linkObj.setAttribute('onclick', "clicks()");
 	linkObj.setAttribute('id', idP);
 	foodArray.push({
@@ -160,8 +158,8 @@ function Img(imgSrc, id) {
 			amountOfProducts.push(idObj);
 			$WhiteBoardProduct = $("<section>").attr("id", idObj + "section").appendTo("#whiteBoard").addClass("sectionWhiteBoard");
 			$buttons = $('<section>').appendTo($WhiteBoardProduct).addClass("plusMinusButtons");
-			$plus = $("<a val='+' href='#'><img src='images/up.png'></a>").appendTo($buttons);
-			$minus = $("<a  val='-' href='#'><img src='images/down.png'></a>").appendTo($buttons);
+			$plus = $("<a val='+'><img src='images/up.png'></a>").appendTo($buttons);
+			$minus = $("<a  val='-' ><img src='images/down.png'></a>").appendTo($buttons);
 			//plus
 			$($plus).click(function() {
 				foodArray[idObj].count += 1;
@@ -191,7 +189,7 @@ function Img(imgSrc, id) {
 						}
 					});
 				});
-				$hoverSectionWhiteBorad = $("<a href=# id=" + idObj + "type></a>").appendTo($WhiteBoardProduct).addClass("WhiteBoardHover");
+				$hoverSectionWhiteBorad = $("<a id=" + idObj + "type></a>").appendTo($WhiteBoardProduct).addClass("WhiteBoardHover");
 				//the red X on the product in the receipt
 				$($WhiteBoardProduct).hover(function() {
 					if ($("#" + idObj + "type").css('display') == 'none')
